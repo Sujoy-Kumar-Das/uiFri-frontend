@@ -10,7 +10,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="py-5 relative">
+    <header className="py-5 relative px-2 md:px-0">
       <nav>
         <div className=" max-w-7xl mx-auto flex justify-between items-center w-full">
           <div className=" flex items-center space-x-1">

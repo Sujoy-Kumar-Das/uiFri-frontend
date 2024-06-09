@@ -4,8 +4,8 @@ import { FaBell } from "react-icons/fa6";
 
 export default function WhyChoseUsSection() {
   return (
-    <section className=" py-20 relative overflow-hidden">
-      <div className=" max-w-7xl w-full mx-auto relative flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
+    <section className=" py-20 relative overflow-hidden px-2 md:px-0">
+      <div className=" max-w-7xl w-full mx-auto relative flex flex-col md:flex-row justify-center md:justify-between items-center">
         <div className=" w-full md:w-1/2">
           <h1 className=" text-2xl font-light text-[#FF6666]">ADVANTAGES</h1>
           <h1 className=" text-4xl md:text-6xl font-extrabold my-3">

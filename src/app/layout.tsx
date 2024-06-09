@@ -1,8 +1,14 @@
+import Footer from "@/components/shared/footer/Footer";
 import Navbar from "@/components/shared/navbar/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+// Import Swiper styles
+import Providers from "@/providers/Providers";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "./globals.css";
-import Footer from "@/components/shared/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <Providers>
+      <html lang="en">
+        <body className={inter.className}>
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </Providers>
   );
 }

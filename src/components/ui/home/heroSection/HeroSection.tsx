@@ -4,7 +4,7 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 
 export default function HeroSection() {
   return (
-    <section className=" overflow-hidden">
+    <section className=" overflow-hidden px-2 md:px-0">
       <div className=" max-w-7xl mx-auto w-full py-10 flex justify-between items-start flex-wrap">
         {/* segment 1 */}
         <div className=" w-full md:w-1/2">
