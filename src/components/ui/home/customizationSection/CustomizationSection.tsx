@@ -1,5 +1,6 @@
 import { assets } from "@/assets";
 import Image from "next/image";
+import { FaStarOfLife } from "react-icons/fa6";
 
 export default function CustomizationSection() {
   return (
@@ -17,8 +18,19 @@ export default function CustomizationSection() {
           </div>
         </div>
         <div className=" w-full md:w-1/2">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ad et
-          quam quidem laudantium nostrum tempora eum saepe, animi pariatur.
+          <div className=" flex items-center space-x-2 mt-2">
+            <p className=" text-xl bg-[#FF6666] p-3 rounded-full text-white">
+              <FaStarOfLife />
+            </p>
+            <h1 className=" text-4xl font-bold">Fully Customizable</h1>
+          </div>
+          <p className=" font-light text-base text-[#7F7F7F] mt-5">
+            Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies.
+            In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus,
+            Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse
+            Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien,
+            Suspendisse Aliquam.
+          </p>
         </div>
       </div>
     </section>
