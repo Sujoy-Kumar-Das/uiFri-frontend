@@ -1,13 +1,29 @@
 import { assets } from "@/assets";
 import Image from "next/image";
+import { FaBell } from "react-icons/fa6";
 
 export default function WhyChoseUsSection() {
   return (
     <section className=" py-20 relative overflow-hidden">
       <div className=" max-w-7xl w-full mx-auto relative flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
         <div className=" w-full md:w-1/2">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ad et
-          quam quidem laudantium nostrum tempora eum saepe, animi pariatur.
+          <h1 className=" text-2xl font-light text-[#FF6666]">ADVANTAGES</h1>
+          <h1 className=" text-4xl md:text-6xl font-extrabold my-3">
+            Why Choose Uifry?
+          </h1>
+          <div className=" flex items-center space-x-2 my-4">
+            <p className=" text-2xl font-bold text-[#FF6666]">
+              <FaBell />
+            </p>
+            <h1 className=" text-2xl font-bold">Clever Notifications</h1>
+          </div>
+          <p className=" font-light text-base text-[#7F7F7F] mt-2">
+            Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies.
+            In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus,
+            Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse
+            Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien,
+            Suspendisse Aliquam.
+          </p>
         </div>
         <div className=" w-full md:w-1/2 relative">
           <div className=" w-full h-full">
