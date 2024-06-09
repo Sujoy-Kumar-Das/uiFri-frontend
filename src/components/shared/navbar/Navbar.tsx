@@ -22,7 +22,7 @@ export default function Navbar() {
               >
                 uifry
               </Link>
-              <p className=" text-[10px]">TM</p>
+              <p className=" text-[10px] cursor-pointer">TM</p>
             </div>
           </div>
 
