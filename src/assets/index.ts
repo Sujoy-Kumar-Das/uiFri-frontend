@@ -6,6 +6,7 @@ export const assets = {
   mobile1: require("./mobile1.png"),
   mobile2: require("./mobile2.png"),
   mobile3: require("./mobile3.png"),
-  mobile4: require("./mobile4.png"),
+  mobile4: require("./iPhone 13 Pro.png"),
   star: require("./star.png"),
+  testimonial: require("./testimonial.png"),
 };
