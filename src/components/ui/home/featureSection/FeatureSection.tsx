@@ -6,9 +6,11 @@ interface IFeature {
   description: string;
   image: string;
 }
+
 export default async function FeatureSection() {
-  const res = await fetch("http://localhost:5000/api/feature");
-  const data = await res.json();
+  const res = await fetch("https://backend-rosy-chi.vercel.app/api/feature");
+  const { data } = await res.json();
+
   return (
     <section className=" py-20 relative px-2 md:px-0">
       <div className=" max-w-7xl w-full mx-auto relative flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
@@ -30,7 +32,7 @@ export default async function FeatureSection() {
           </h1>
 
           <div>
-            {data?.data.map((item: IFeature) => (
+            {data.map((item: IFeature) => (
               <div key={item._id} className=" my-5">
                 <div className=" flex items-center space-x-2 mt-2">
                   <Image

@@ -4,10 +4,10 @@ import "aos/dist/aos.css";
 import { ReactNode, useEffect } from "react";
 export default function Providers({ children }: { children: ReactNode }) {
   useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({ once: false });
     return () => {
       AOS.refresh();
     };
   }, []);
-  return { children };
+  return <main>{children}</main>;
 }

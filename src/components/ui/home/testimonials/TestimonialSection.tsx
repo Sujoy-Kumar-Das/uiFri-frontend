@@ -3,9 +3,12 @@ import Image from "next/image";
 import TestimonialSlider from "./TestimonialSlider";
 
 export default async function TestimonialSection() {
-  const res = await fetch("http://localhost:5000/api/testimonial", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://backend-rosy-chi.vercel.app/api/testimonial",
+    {
+      cache: "no-store",
+    }
+  );
   const data = await res.json();
   return (
     <section className=" py-20">

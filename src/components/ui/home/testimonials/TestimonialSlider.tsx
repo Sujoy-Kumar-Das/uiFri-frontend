@@ -3,14 +3,22 @@ import Image from "next/image";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function TestimonialSlider({ data }) {
+interface ITestimonial {
+  _id: string;
+  image: string;
+  title: string;
+  feedback: string;
+  name: string;
+}
+
+export default function TestimonialSlider({ data }: { data: ITestimonial[] }) {
   return (
     <Swiper
       autoplay={{ delay: 5000 }}
       loop={true}
       modules={[Autoplay, Navigation, Pagination]}
     >
-      {data.map(({ _id, image, title, feedback, name }) => (
+      {data.map(({ _id, image, title, feedback, name }: ITestimonial) => (
         <SwiperSlide key={_id}>
           <div className=" px-5 py-6 bg-gray-200 rounded-lg">
             <h1 className=" text-2xl md:text-3xl font-bold mb-5">{title}</h1>
